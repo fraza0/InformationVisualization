@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<title>St. Helens</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="instructions_panel">
+			Press <span class="instruction">W/A/S/D</span> to move light source position (Up/Left/Down/Right). <br>
+			Press <span class="instruction">+/-</span> to change light intensity. Press <span class="instruction">L</span> to change light source.
+			Press <span class="instruction">H</span> to see helpers.
+		</div>
+		<div id="container"></div>
+		<div id="options">
+			<form id="form">
+			    <h1 align="center" id="title"> Settings </h1>
+				<!-- <br> -->
+				<label for="rep">Representation:</label>
+			    <select id="rep" name="rep">
+							<option selected value="point_cloud">Point Cloud</option>
+			      	<option value="triangle_mesh">Triangle Mesh</option>
+			      	<option value="colored_triangle_mesh">Colored Triangle Mesh</option>
+							<option value="colored_triangle_phongmesh">Colored Phong</option>
+			      	<option value="texture">Texture</option>
+			    </select>
+
+				<div id="colors">
+					<!-- <br> -->
+					<label for"grid" >Color scheme: <button id="addField"type="button">+</button></label>
+					<div id="grid" class="grid-container">
+						<!-- <div class="grid-item">
+							<span>Value: </span><input class="value" name="value" size=5>
+							<span>Color: </span><input class="jscolor color" name="color" size=5>
+							<button class="delete" type="button">-</button>
+						</div> -->
+					</div>
+				</div>
+				<br>
+
+				<input id="submit" align="middle" type="button" value="Submit">
+			</form>
+		</div>
+
+	</body>
+	<script src="https://rawgithub.com/mrdoob/three.js/master/build/three.js"></script>
+	<script src="https://unpkg.com/delaunator@3.0.2/delaunator.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/actions.js"></script>
+	<script src="./js/controls/OrbitControls.js"></script>
+
+
+</html>

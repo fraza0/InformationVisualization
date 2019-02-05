@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    margin:0px;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button] {
+    width: 100%;
+    text-align: center;
+}
+
+#container {
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  padding: 10px;
+}
+
+.grid-item {
+    padding-bottom: 10px;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #575e63;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+#options {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    /* width: 315px; */
+    left: 10px;
+    padding: 10px;
+    z-index: 10;
+    overflow: inherit;
+    /* height: 94%; */
+    border-radius: 6px;
+    visibility: visible;
+}
+
+#title {
+    font-family:verdana;
+    font-size:30px;
+    color:#778899;
+}
+
+#instructions_panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  color: lightgrey;
+}
+
+.instruction {
+  color: red;
+}
+
+#colors {
+  display: none;
+}

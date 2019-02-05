@@ -1,0 +1,12 @@
+Fonte dos dados: ficheiro-exemplo que acompanha o software SURFER, da Golden Software.
+
+
+HELENS2.DAT
+-----------
+Local: vulcão Saint Helens (USA)
+Coordenadas (x,y,z), dispostas em colunas por esta ordem (coluna 1, coluna 2, coluna 3)
+Nº total de pontos: 152382
+Os pontos estão distribuidos segundo uma malha rectangular regular (Modelo Digital do Terreno).
+helens2a.jpg - representação no programa Surfer
+helens2b.jpg - representação no programa Surfer
+
