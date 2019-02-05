@@ -1,0 +1,85 @@
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.axis {
+	font-size: 14px;
+  font-weight: bold;
+}
+
+text {
+  fill: #727075;
+  stroke: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: none;
+  stroke-width: 2px;
+  shape-rendering: crispEdges;
+}
+
+.grid path {
+  stroke: none;
+}
+
+.grid line {
+  stroke: #E0E0E0;
+  shape-rendering: crispEdges;
+}
+
+.data-line {
+  fill: none;
+  stroke: #3C92BA;
+  stroke-width: 4px;
+}
+
+.data-circle {
+	fill: #3C92BA;
+}
+
+.axis-title {
+	text-anchor: end;
+  fill: #5D6971;
+  font-weight: normal;
+}
+
+.axis-tspan {
+	font-size: 12px;
+}
+
+.at-risk-cut-off-line {
+  fill: none;
+  stroke: #89868E;
+  stroke-dasharray: 8,8;
+  stroke-width: 4px;
+}
+
+.at-risk-cut-off-text {
+  text-transform: uppercase;
+  text-anchor: start;
+	font-size: 12px;
+  font-weight: bold;
+}
+
+/* tooltip */
+
+div.tooltip {
+    position: absolute;
+    text-align: center;			
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}

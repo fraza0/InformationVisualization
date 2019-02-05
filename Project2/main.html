@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>FICA - Desempenho</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/line.css">
+    <link rel="stylesheet" type="text/css" href="css/bar.css">
+  </head>
+  <body>
+    <div id="sidebar" class="col-md-2">
+      <h4>Definições de Visualização</h4>
+      <div id="visualization_div" class="bar_section">
+        <label for="visualization">Análise</label>
+        <select id="visualization" name="visualization">
+          <option value="1" selected>Global</option>
+          <option value="2" selected>Individual</option>
+          <option value="3">Comparação de Cursos</option>
+        </select>
+      </div>
+
+      <div id="global_year_div" class="bar_section">
+        <label for="year_global">Ano</label>
+        <select id="year_global" name="year_global">
+          <option value="1" selected>Global</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+        </select>
+      </div>
+
+      <div id="line_year_div" class="bar_section">
+        <label for="year_line">Ano</label>
+        <select id="year_line" name="year_line">
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+        </select>
+        <label for="ects_type">Tipo de comparação:</label>
+        <select id="ects_type" name="ects_type">
+          <option value="taxa">Taxa de ECTS realizados</option>
+          <option value="media">Média de ECTS realizados</option>
+        </select>
+      </div>
+
+      <div class="bar_section">
+        <input class="centered" id="clear_selection" type="button" name="clear" value="Limpar Seleção">
+      </div>
+
+      <div class="bar_section" id="legenda">
+        <fieldset>
+        <legend>Legenda</legend>
+        <div>
+          <span class="cor" id="cor1"></span>
+          <label for="cor1">CTeSP</label>
+        </div>
+        <div>
+          <span class="cor" id="cor2"></span>
+          <label for="cor2">Licenciatura - 1º Ciclo</label>
+        </div>
+        <div>
+          <span class="cor" id="cor3"></span>
+          <label for="cor3">Mestrado Integrado</label>
+        </div>
+        </fieldset>
+      </div>
+
+    </div>
+
+    <div id="container" class="col-md-10">
+      <span id="help">Ajuda: Clique sobre os círculos para selecionar um curso.</span>
+    </div>
+
+    <!-- Line chart -->
+    <div id="line-grades" class="col-md-10"></div>
+
+    <!-- Bar chart -->
+    <div id="bar-grades" class="bars col-md-5"></div>
+    <div id="info_curso" class="bars col-md-4">
+      <fieldset>
+      <legend>Detalhes</legend>
+      <div>
+       <label for="nome_curso">Nome do curso:</label>
+       <span class="info" id="nome_curso">PLACEHOLDER</span>
+      </div>
+      <div>
+       <label for="cod_curso">Código do curso:</label>
+       <span class="info" id="cod_curso">PLACEHOLDER</span>
+      </div>
+      <div class="no-info">
+       <label for="taxa_ects">Taxa ECTS realizados:</label>
+       <span class="info" id="taxa_ects">PLACEHOLDER</span>
+      </div>
+      <div class="no-info">
+        <label for="media_ects">Média ECTS realizados:</label>
+        <span class="info" id="media_ects">PLACEHOLDER</span>
+      </div>
+      <div class="no-info">
+        <label for="media_max_avaliacao">Nota máxima de média de avaliação:</label>
+        <span class="info" id="media_max_avaliacao">PLACEHOLDER</span>
+      </div>
+      <div class="no-info">
+        <label for="media_min_avaliacao">Nota mínima de média de avaliação:</label>
+        <span class="info" id="media_min_avaliacao">PLACEHOLDER</span>
+      </div class="no-info">
+      <div class="no-info">
+        <label for="media_avaliacao">Média de avaliação:</label>
+        <span class="info" id="media_avaliacao">PLACEHOLDER</span>
+      </div>
+
+      <div class="no-info">
+        <label for="matriculas_ativas">Número de matriculas ativas:</label>
+        <span class="info" id="matriculas_ativas">PLACEHOLDER</span>
+      </div>
+      <div class="no-info">
+        <label for="matriculas_anuladas">Número de matriculas anuladas:</label>
+        <span class="info" id="matriculas_anuladas">PLACEHOLDER</span>
+      </div>
+      </fieldset>
+      <div class="no-info" id="title_div">
+        <label id='title_label'>Desempenho dos estudantes segundo a taxa de ECTS realizados:</label>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+<script src="js/main.js"></script>
+<script src="js/stats_curso.js"></script>
+<script src="./js/bubble.js"></script>
+<script src="js/aproveitamento.js"></script>
+<script src="js/aproveitamento_bar.js"></script>
+<script src="js/bar_alunos.js"></script>

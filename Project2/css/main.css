@@ -1,0 +1,80 @@
+#sidebar {
+  background-color: #dedee0;
+  padding: 10px;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  float: left;
+  height: 98vh;
+}
+
+#sidebar>h4 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#line-grades, #bar-grades, #info_curso {
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    float: left;
+    height: 98vh;
+}
+
+#container {
+  padding: 10px;
+  float: left;
+  height: 100vh;
+  padding-left: 50px;
+}
+
+.bar_section {
+  padding: 15px;
+  padding-top: 0px;
+}
+
+.selected_circle {
+  stroke: red;
+  stroke-width: 2px;
+  filter: brightness(120%);
+}
+
+#info_curso {
+  top: 30px;
+}
+
+#bar-grades {
+  top: 30px;
+  text-align: center;
+}
+
+#title_div{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#title_label {
+    vertical-align: middle;
+}
+
+#svg_alunos {
+    display: block;
+    margin: auto
+}
+
+#legenda {
+  padding-top: 50px;
+}
+
+.cor {
+  padding-right: 19px;
+  padding-bottom: 0px !important;
+  margin-right: 5px;
+}
+
+#help {
+  position: absolute;
+  text-align: center;
+}

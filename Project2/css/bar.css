@@ -1,0 +1,61 @@
+line#limit {
+    stroke: #021B77;
+    stroke-width: 3;
+    stroke-dasharray: 3 6;
+}
+
+.bar {
+  fill: #89B7D6;
+}
+
+text.divergence {
+  fill: #FFFFFF;
+}
+
+text.ects {
+  fill: #021B77;
+}
+
+text.avg {
+  fill: #021B77;
+}
+
+text.title {
+  font-size: 22px;
+}
+
+text.source {
+  font-size: 10px;
+}
+
+text.value {
+  font-size: 16px;
+  fill: #021B77;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.8;
+}
+
+.eixos {
+	font-size: 14px;
+}
+
+.eixos_students {
+	font-size: 10px;
+}
+
+text.student_divergence {
+    fill: #494444;
+}
+
+line#limit_students {
+    stroke: #494444;
+    stroke-width: 3;
+    stroke-dasharray: 3 6;
+}
+
+text.#value_students {
+    fill: #494444;
+}
